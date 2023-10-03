@@ -50,8 +50,27 @@ const users = [
   }
 ]
 
-console.log(users[1].email); 
-console.log(users[1]);
+// console.log(users[1].email); 
+// console.log(users[1]);
+
+
+// Objects destructuring and JSON API -- 4:24:46
+const course = {
+  coursename: "JS in Hindi",
+  price: "999",
+  courseInstructor: "Hitesh"
+}
+
+//VVIMP
+//course.courseInstructor
+//another way to get data
+//const {courseInstructor} = course  //--> here course object se hame coursInstrctor ki value chahiye bas
+//console.log(courseInstructor);
+const {courseInstructor: instrctor} = course //--> agar courseInstrcutor bada name lagr ahai to u=you can alias(change) it
+console.log(instrctor);
+
+
+
 
 
 
